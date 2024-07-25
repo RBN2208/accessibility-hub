@@ -1,0 +1,62 @@
+.reportBox {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  grid-template-areas: 'title title' 'state upload' 'desc desc';
+  gap: 1rem;
+  padding: 1rem;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0,0,0,.5);
+}
+
+.reportHeading {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  &:after {
+    display: block;
+    content: "";
+    height: 0.5rem;
+    border-bottom: 1px solid black;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+}
+
+.levelHint {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.reportState {
+  grid-area: state;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.reportUpload {
+  grid-area: upload;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  button {
+    border: 1px solid black;
+    padding: 0.3rem;
+  }
+  input {
+    display: none;
+  }
+}
+
+.reportDescription {
+  grid-area: desc;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}

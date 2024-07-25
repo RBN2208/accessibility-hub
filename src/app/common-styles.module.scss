@@ -1,0 +1,14 @@
+.defaultAnchor {
+  color: black;
+  &:hover {
+    text-shadow: 1px 0 black;
+  }
+}
+
+.highlightAnchor {
+  color: #30309b;
+  text-decoration: underline;
+  &:hover {
+    text-shadow: 0.5px 0 #30309b;
+  }
+}

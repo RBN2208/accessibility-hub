@@ -1,0 +1,33 @@
+.expandable {
+  margin-bottom: 1rem;
+}
+
+.expandableButton {
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid black;
+  padding: 1rem;
+  width: 100%;
+  background-color: black;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.expandableContent {
+  display: none;
+  border: 1px solid black;
+  border-top: none;
+  padding: 1rem;
+  > div {
+    margin-bottom: 1rem;
+  }
+  > div:only-child,
+  > div:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.active {
+  display: block;
+}
