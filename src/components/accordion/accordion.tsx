@@ -15,6 +15,7 @@ export default function Accordion({title, children, headingLevel}) {
   }
 
   const className = `${styles.expandableContent} ${isOpen ? styles.active : ''}`;
+
   useEffect(() => {
     setControlsId(uuidv4());
     setTitleId(uuidv4());

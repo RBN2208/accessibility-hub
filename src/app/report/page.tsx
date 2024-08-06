@@ -3,8 +3,11 @@ import Accordion from '@/components/accordion/accordion';
 import ReportBox from '@/components/report/reportBox';
 
 import { WCAG } from '@/data/criterias';
+import Select from '@/components/common/select/select';
 
 export default function Home() {
+  const levelOptions = ['A', 'AA', 'AAA'];
+
   return (
     <main className={styles.main}>
       {WCAG.map(guideline => (
